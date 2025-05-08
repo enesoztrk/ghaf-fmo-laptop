@@ -663,13 +663,13 @@
         ]
       },
       "locked": {
-        "lastModified": 1746426639,
-        "narHash": "sha256-nE3Ix0DJEpCa6Cr600e4D2BqS9w2UIB4qQvA0zl4K2s=",
-        "ref": "refs/heads/main",
-        "rev": "4603f0643b4617bdf128aeef158e2234cefc7e8c",
-        "revCount": 401,
+        "lastModified": 1745569552,
+        "narHash": "sha256-80rmbMRfDAoWpr+xtsXhVssScpqDT/zcZkH088I25JI=",
+        "ref": "v0.0.10",
+        "rev": "26cd8d4e73c642f156b6e99e53ff1440e2827a0a",
+        "revCount": 396,
         "type": "git",
-        "url": "ssh://git@github.com/tiiuae/onboarding-agent"
+        "url": "https://github.com/tiiuae/onboarding-agent"
       },
       "original": {
         "type": "git",

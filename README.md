@@ -117,6 +117,9 @@ just NETRC_FILE=/home/user/.my-secrets build .#fmo-lenovo-x1-gen11-debug
 
 ```
 
+### Updating onboarding-agent
+
+nix flake lock --override-input onboarding-agent git+https://github.com/tiiuae/onboarding-agent?ref=v0.0.10
 
 ## Contributing
 
