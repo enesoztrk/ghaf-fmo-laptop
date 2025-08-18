@@ -38,8 +38,7 @@ in
         ca-path = "/run/certs/nats/ca";
         server-ips = [
           "127.0.0.1"
-        ]
-        ++ optionals isMsgvmEnabled "${hosts.msg-vm.ipv4}";
+        ] ++ optionals isMsgvmEnabled "${hosts.msg-vm.ipv4}";
         server-name = "NATS-server";
         server-path = "/run/certs/nats/server";
         clients-paths = [

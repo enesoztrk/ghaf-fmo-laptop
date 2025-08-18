@@ -56,8 +56,7 @@ let
               boot.swraid.mdadmConf = "PROGRAM ${pkgs.coreutils}/bin/true";
             }
           )
-        ]
-        ++ extraModules;
+        ] ++ extraModules;
       };
     in
     {

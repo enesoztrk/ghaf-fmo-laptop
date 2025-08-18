@@ -3,7 +3,9 @@
 #
 { prev }:
 prev.lisgd.overrideAttrs (oldAttrs: {
-  postPatch = oldAttrs.postPatch or "" + ''
-    cp ${./config.h} config.def.h
-  '';
+  postPatch =
+    oldAttrs.postPatch or ""
+    + ''
+      cp ${./config.h} config.def.h
+    '';
 })

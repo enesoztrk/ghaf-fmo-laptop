@@ -84,12 +84,13 @@ in
 
       virtualization.microvm.appvm = {
         enable = true;
-        vms = {
-          chrome.enable = false;
-          zathura.enable = false;
-        }
-        // (import ../microvm/docker/vm.nix { inherit pkgs lib config; })
-        // (import ../microvm/msg/vm.nix { inherit pkgs lib config; });
+        vms =
+          {
+            chrome.enable = false;
+            zathura.enable = false;
+          }
+          // (import ../microvm/docker/vm.nix { inherit pkgs lib config; })
+          // (import ../microvm/msg/vm.nix { inherit pkgs lib config; });
       };
 
       hardware.passthrough.VMs = {
