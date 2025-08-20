@@ -34,6 +34,21 @@
         icon = "${pkgs.papirus-icon-theme}/share/icons/Papirus/64x64/places/user-trash.svg";
         command = "foot /run/wrappers/bin/sudo ${pkgs.fmo-offboarding}/bin/fmo-offboarding";
       }
+      {
+        name = "LazyJournal";
+        description = "Makes it easier to read systemd and docker logs";
+        packages = [
+          pkgs.lazyjournal
+          pkgs.papirus-icon-theme
+          pkgs.docker
+        ];
+        icon = "${pkgs.papirus-icon-theme}/share/icons/Papirus/64x64/mimetypes/text-x-changelog.svg";
+        command = ''
+          foot \
+          /run/wrappers/bin/sudo \
+          $(PATH=$PATH:${pkgs.docker}/bin/docker ${pkgs.lazyjournal}/bin/lazyjournal --update 2)
+        '';
+      }
     ];
     extraModules = [
       (import ./config.nix { inherit pkgs lib config; })

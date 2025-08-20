@@ -31,6 +31,7 @@ in
       pkgs.natscli
       pkgs.device-assembly-agent
       pkgs.nats-server
+      pkgs.lazyjournal
     ];
 
     # Use givc service & app manager
@@ -98,11 +99,12 @@ in
       settings.main.font = "FiraCode Nerd Font Mono:size=10";
     };
 
-    # Allow app user in this vm to run root commands for on-/offboarding and DAC agent
+    # Allow app user in this vm to run root commands
     security.sudo.extraConfig = ''
       ${appuser} ALL=(root) NOPASSWD: ${pkgs.fmo-onboarding}/bin/fmo-onboarding
       ${appuser} ALL=(root) NOPASSWD: ${pkgs.fmo-offboarding}/bin/fmo-offboarding
       ${appuser} ALL=(root) NOPASSWD: ${pkgs.device-assembly-agent}/bin/device-assembly-agent
+      ${appuser} ALL=(root) NOPASSWD: ${pkgs.pkgs.lazyjournal}/bin/lazyjournal
     '';
 
     users.groups."plugdev" = { };
