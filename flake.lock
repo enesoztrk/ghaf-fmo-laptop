@@ -673,15 +673,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1752043847,
-        "narHash": "sha256-EGdkF6yTsG1GGZPpPdAmd51+da2O9iU6OJliCGXj1K8=",
-        "ref": "refs/heads/main",
-        "rev": "537c6535aa320c222b45e3553394fa1d330cd200",
-        "revCount": 419,
+        "lastModified": 1755601025,
+        "narHash": "sha256-XbkxOWUpd+RMnSIc0otvnCTEIYI+BxB/+pIsGIjfD98=",
+        "ref": "feature/dac-verification",
+        "rev": "50a811cc93c04a5b0a3a2f7a3353b432d426ab25",
+        "revCount": 420,
         "type": "git",
         "url": "ssh://git@github.com/tiiuae/onboarding-agent"
       },
       "original": {
+        "ref": "feature/dac-verification",
         "type": "git",
         "url": "ssh://git@github.com/tiiuae/onboarding-agent"
       }
